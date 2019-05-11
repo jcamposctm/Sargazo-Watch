@@ -1,18 +1,17 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Recoleccion</ion-title>
+    <ion-title>Recolección</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-grid>
-   <ion-row>
-     <ion-col>
-       
-     </ion-col>
-   </ion-row> 
-  </ion-grid>
+  <div id="map" #map class="map">
+  </div>
+  <ion-input placeholder="Privado" readonly="true" text-center></ion-input>
+  <ion-item>
+    <ion-range [(ngModel)]="singleValue" color="danger" pin="true"></ion-range>
+  </ion-item>
 </ion-content>

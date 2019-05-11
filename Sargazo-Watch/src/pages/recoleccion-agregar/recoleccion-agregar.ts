@@ -1,25 +1,41 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the RecoleccionAgregarPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
+declare var google;
 @IonicPage()
 @Component({
   selector: 'page-recoleccion-agregar',
   templateUrl: 'recoleccion-agregar.html',
 })
 export class RecoleccionAgregarPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  map: any;
+  @ViewChild('map') mapElement: ElementRef;
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams
+  ) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad RecoleccionAgregarPage');
+   this.map =  this.loadMap();
+  }
+
+
+  loadMap() {
+    let map = new google.maps.Map(this.mapElement.nativeElement,{
+      zoom: 14,
+      center: {lat: 18.5001889, lng: -88.296146},
+      disableDefaultUI: false,
+      scaleControl: true,
+      mapTypeControl: false,
+      streeViewControl: false,
+      fullscreenControl: false,
+      zoomControl: true
+    });
+
+    return map;
+
   }
 
 }
