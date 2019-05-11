@@ -1,0 +1,55 @@
+<!--
+  Generated template for the RecoleccionSemanalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>recoleccion-semanal</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+    <ion-card class="caja">
+        <ion-card-header class="head">
+            <div><span style="float:right">Recoleccion</span>Lugar</div>        
+        </ion-card-header>
+          <ion-item class="botones" *ngFor="let datos of datos; let i = index" click="goDetalles(datos)">
+              <div><span style="float:right">{{datos.peso}} kg</span>{{datos.lugar}}</div> 
+          </ion-item>
+       </ion-card> 
+
+  <!-- <ion-grid no-padding margin-top class="Form">
+
+    <ion-row style="padding: 10px">
+      <ion-col ion-item col-4 col-sm-4 text-center text-wrap no-lines style="margin: 1px ">
+        <ion-icon name="md-boat"></ion-icon>
+        <p>
+          Cupo Disponible
+          <br> h
+        </p>
+      </ion-col>
+      <ion-col ion-item col-4 col-sm-4 text-center text-wrap no-lines>
+        <ion-icon name="md-boat"></ion-icon>
+        <p>
+          Cupo Total
+          <br> h
+        </p>
+      </ion-col>
+      <ion-col ion-item col-4 col-sm-4 text-center text-wrap no-lines>
+        <ion-icon name="md-boat"></ion-icon>
+        <p>
+          Partida
+          <br> h
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+
+</ion-content>
