@@ -4,12 +4,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { RecoleccionAgregarPage } from '../pages/recoleccion-agregar/recoleccion-agregar';
+import { AgregarReportePage } from '../pages/agregar-reporte/agregar-reporte';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = RecoleccionAgregarPage;
+  rootPage:any = AgregarReportePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

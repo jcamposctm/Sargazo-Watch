@@ -6,13 +6,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { RecoleccionAgregarPage } from '../pages/recoleccion-agregar/recoleccion-agregar';
+import { AgregarReportePage } from '../pages/agregar-reporte/agregar-reporte';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    RecoleccionAgregarPage
+    AgregarReportePage
   ],
   imports: [
     BrowserModule,
@@ -22,7 +22,7 @@ import { RecoleccionAgregarPage } from '../pages/recoleccion-agregar/recoleccion
   entryComponents: [
     MyApp,
     HomePage,
-    RecoleccionAgregarPage
+    AgregarReportePage
   ],
   providers: [
     StatusBar,
