@@ -1,6 +1,8 @@
 {
   "name": "Sargazo-Watch",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular",
   "app_id": ""
 }
