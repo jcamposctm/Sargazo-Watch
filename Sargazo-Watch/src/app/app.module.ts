@@ -7,12 +7,17 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AgregarReportePage } from '../pages/agregar-reporte/agregar-reporte';
+import { ResumenReportePage } from '../pages/resumen-reporte/resumen-reporte';
+import { RegistroPage } from '../pages/registro/registro';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    AgregarReportePage
+    AgregarReportePage,
+    ResumenReportePage,
+    RegistroPage
+
   ],
   imports: [
     BrowserModule,
@@ -22,7 +27,9 @@ import { AgregarReportePage } from '../pages/agregar-reporte/agregar-reporte';
   entryComponents: [
     MyApp,
     HomePage,
-    AgregarReportePage
+    AgregarReportePage,
+    ResumenReportePage,
+    RegistroPage
   ],
   providers: [
     StatusBar,

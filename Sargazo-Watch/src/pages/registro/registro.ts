@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {ResumenReportePage} from '../resumen-reporte/resumen-reporte';
+
 /**
- * Generated class for the AgregarReportePage page.
+ * Generated class for the RegistroPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,20 +10,16 @@ import {ResumenReportePage} from '../resumen-reporte/resumen-reporte';
 
 @IonicPage()
 @Component({
-  selector: 'page-agregar-reporte',
-  templateUrl: 'agregar-reporte.html',
+  selector: 'page-registro',
+  templateUrl: 'registro.html',
 })
-export class AgregarReportePage {
+export class RegistroPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AgregarReportePage');
-  }
-
-  resumen_reporte():void{
-      this.navCtrl.push(ResumenReportePage);
+    console.log('ionViewDidLoad RegistroPage');
   }
 
 }
