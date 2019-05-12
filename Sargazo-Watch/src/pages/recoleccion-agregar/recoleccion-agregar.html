@@ -1,17 +1,56 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Recolección</ion-title>
+    <ion-title text-center>Recolección</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <p text-center>Area seleccionada</p>
+  <h2 text-center>{{nombre}}</h2>
   <div id="map" #map class="map">
   </div>
   <ion-input placeholder="Privado" readonly="true" text-center></ion-input>
   <ion-item>
-    <ion-range [(ngModel)]="singleValue" color="danger" pin="true"></ion-range>
+    <ion-range [(ngModel)]="singleValue" color="danger" pin="true" min="0" max="1">
+      <ion-label range-left>Tierra</ion-label>
+      <ion-label range-right>Mar</ion-label>
+    </ion-range>
   </ion-item>
+  <ion-item>
+    <ion-label>Unidad</ion-label>
+    <ion-select [selectOptions]="selectOptions" okText="Ok" cancelText="Cancelar">
+      <ion-option *ngFor="let herramienta of herramientas">
+        {{herramienta}}
+      </ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-label stacked>
+          Unidades
+        </ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item>
+        <ion-label stacked text-end>
+          Personas
+        </ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <button ion-button color="primary" round>Guardar</button>
+    </ion-col>
+    <ion-col text-end>
+      <button ion-button color="primary" round>Cancelar</button>
+    </ion-col>
+  </ion-row>
 </ion-content>

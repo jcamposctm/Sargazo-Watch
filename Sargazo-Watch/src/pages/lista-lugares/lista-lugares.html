@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>Lugares</ion-title>
+  </ion-navbar>
+  <ion-searchbar placeholder="Buscar" [(ngModel)]="myInput" (ionInput)="onInput($event)" (ionCancel)="onCancel()"
+    (ionClear)="onClear()" [showCancelButton]="true">
+  </ion-searchbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div class="ciudades" no-padding *ngFor="let lugar of realItems; let i = index"
+    [ngStyle]="{'background-image': 'url(' + lugar.url + ')'}" (click)="goToRecoleccion(lugar.nombre)">
+    <ion-row class="efecto">
+      <!-- <div col-2 class="icono" (click)="infoCiudad(ZonaTuristica)">
+        <ion-icon name="ios-book-outline"></ion-icon>
+        <br>Info.
+      </div> -->
+      <div col-8 class="texto">
+        {{ lugar.nombre }}
+      </div>
+
+      <!-- <div col-2 class="icono-flecha">
+        <ion-icon name="ios-arrow-forward" (click)="goTours(ZonaTuristica)"></ion-icon>
+      </div> -->
+    </ion-row>
+  </div>
+</ion-content>

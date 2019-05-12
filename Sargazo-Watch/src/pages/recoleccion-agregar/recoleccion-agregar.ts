@@ -9,12 +9,32 @@ declare var google;
   templateUrl: 'recoleccion-agregar.html',
 })
 export class RecoleccionAgregarPage {
+  nombre;
   map: any;
+  selectOptions = {
+    title: 'Selecciona una opcion',
+    mode: 'ios'
+  };
+  herramientas = [
+    'Palas',
+    'Cubetas',
+    'Rastrillos'
+  ];
+
+  maquinarias = [
+    'Tractor Camion',
+    'Volquete'
+  ]
+
+  embarcaciones = [
+    'Sumbarino',
+    'Buque'
+  ]
   @ViewChild('map') mapElement: ElementRef;
   constructor(
     public navCtrl: NavController,
-    public navParams: NavParams
-  ) {
+    public navParams: NavParams ) {
+      this.nombre = this.navParams.get('nombre');
   }
 
   ionViewDidLoad() {
