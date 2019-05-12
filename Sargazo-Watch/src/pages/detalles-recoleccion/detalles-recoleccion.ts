@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the DetallesRecoleccionPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -15,7 +9,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DetallesRecoleccionPage {
 
+  public datos: any;
+  public kg: any;
+  public lugar: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.datos = this.navParams.get('data');
+    console.log(this.datos);
+    this.getDatos();
+  }
+
+  getDatos(){
+    this.kg = this.datos.peso;
+    console.log(this.kg);
+    this.lugar = this.datos.lugar;
+    console.log(this.lugar);
   }
 
   ionViewDidLoad() {

@@ -9,7 +9,7 @@ import { AgregarReportePage } from '../pages/agregar-reporte/agregar-reporte';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = AgregarReportePage;
+  rootPage:any = HomePage ;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

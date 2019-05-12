@@ -1,8 +1,6 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Inicio
-    </ion-title>
+  <ion-navbar color="primary" >
+    <ion-title class="ion-title">Inicio</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -12,22 +10,22 @@
       <ion-card-title>Recoleccion de la semana</ion-card-title>
     </ion-card-header>
   </ion-card>
-  <ion-card>
+  <ion-card (click)="goCausas()">
     <ion-card-header>
       <ion-card-title>Causas</ion-card-title>
     </ion-card-header>
   </ion-card>
-  <ion-card>
+  <ion-card (click)="goConsecuencias()">
     <ion-card-header>
       <ion-card-title>Consecuencias</ion-card-title>
     </ion-card-header>
   </ion-card>
-  <ion-card>
+  <ion-card (click)="goPrevencion()">
     <ion-card-header>
       <ion-card-title>Prevencion</ion-card-title>
     </ion-card-header>
   </ion-card>
-  <ion-card>
+  <ion-card (click)="goUsos()">
     <ion-card-header>
       <ion-card-title>Usos</ion-card-title>
     </ion-card-header>

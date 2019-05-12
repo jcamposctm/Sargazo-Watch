@@ -26,7 +26,7 @@ export class RecoleccionSemanalPage {
   }
 
   goDetalles(datos){
-    this.navCtrl.push(DetallesRecoleccionPage, datos)
+    this.navCtrl.push(DetallesRecoleccionPage, {data: datos} )
   }
 
 }

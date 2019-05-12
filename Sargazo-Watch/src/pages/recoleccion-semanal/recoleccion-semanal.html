@@ -6,8 +6,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>recoleccion-semanal</ion-title>
+  <ion-navbar color="primary" >
+    <ion-title class="ion-title">Recoleccion semanal</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -20,7 +20,7 @@
         <ion-card-header class="head">
             <div><span style="float:right">Recoleccion</span>Lugar</div>        
         </ion-card-header>
-          <ion-item class="botones" *ngFor="let datos of datos; let i = index" click="goDetalles(datos)">
+          <ion-item class="botones" *ngFor="let datos of datos; let i = index" (click)="goDetalles(datos)">
               <div><span style="float:right">{{datos.peso}} kg</span>{{datos.lugar}}</div> 
           </ion-item>
        </ion-card> 
