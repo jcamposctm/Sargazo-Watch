@@ -9,13 +9,15 @@ import { HomePage } from '../pages/home/home';
 import { RecoleccionAgregarPage } from '../pages/recoleccion-agregar/recoleccion-agregar';
 import { ListaLugaresPage } from '../pages/lista-lugares/lista-lugares';
 import { FCM } from '@ionic-native/fcm/ngx';
+import { LoginPage } from '../pages/login/login';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     RecoleccionAgregarPage,
-    ListaLugaresPage
+    ListaLugaresPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { FCM } from '@ionic-native/fcm/ngx';
     MyApp,
     HomePage,
     RecoleccionAgregarPage,
-    ListaLugaresPage
+    ListaLugaresPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
