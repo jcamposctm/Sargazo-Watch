@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { RecoleccionAgregarPage } from '../pages/recoleccion-agregar/recoleccion-agregar';
 import { ListaLugaresPage } from '../pages/lista-lugares/lista-lugares';
+import { LoginPage } from '../pages/login/login';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     RecoleccionAgregarPage,
-    ListaLugaresPage
+    ListaLugaresPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { ListaLugaresPage } from '../pages/lista-lugares/lista-lugares';
     MyApp,
     HomePage,
     RecoleccionAgregarPage,
-    ListaLugaresPage
+    ListaLugaresPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
