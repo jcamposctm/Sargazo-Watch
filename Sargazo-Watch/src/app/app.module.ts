@@ -7,12 +7,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { RecoleccionAgregarPage } from '../pages/recoleccion-agregar/recoleccion-agregar';
+import { ListaLugaresPage } from '../pages/lista-lugares/lista-lugares';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    RecoleccionAgregarPage
+    RecoleccionAgregarPage,
+    ListaLugaresPage
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,8 @@ import { RecoleccionAgregarPage } from '../pages/recoleccion-agregar/recoleccion
   entryComponents: [
     MyApp,
     HomePage,
-    RecoleccionAgregarPage
+    RecoleccionAgregarPage,
+    ListaLugaresPage
   ],
   providers: [
     StatusBar,

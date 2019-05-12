@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "929547989843",
+    "firebase_url": "https://sargazo-watch-1557435833322.firebaseio.com",
+    "project_id": "sargazo-watch-1557435833322",
+    "storage_bucket": "sargazo-watch-1557435833322.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929547989843:android:f8b010fb303bd5be",
+        "android_client_info": {
+          "package_name": "com.uqroo.sargazo_watch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929547989843-oidc087pbcg03b3r9cvm62f1p1mevubd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUrKOMXbm6lWPsXeZ2IYEd1q-4lhrqjww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929547989843-oidc087pbcg03b3r9cvm62f1p1mevubd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
