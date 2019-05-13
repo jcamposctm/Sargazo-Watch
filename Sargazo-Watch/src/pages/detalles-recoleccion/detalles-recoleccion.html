@@ -6,8 +6,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>detalles-recoleccion</ion-title>
+  <ion-navbar color="primary">
+    <ion-title class="ion-title"> Detalle Recoleccion</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,76 +15,120 @@
 
 <ion-content padding>
 
-    <ion-grid padding class="animated fadeInDown contenido">
-        <ion-row padding>
-          <ion-col no-lines text-center>
-            <div class="avatar">
-              <ion-icon name="md-boat"></ion-icon>
-            </div>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    
-      <ion-row no-padding>
-        <ion-col class="datos" ion-item col-6 col-sm-6 text-center text-wrap no-lines>
-          <ion-icon name="ios-alarm-outline"></ion-icon>
+  <ion-grid padding class="animated fadeInDown contenido" >
+    <ion-row padding>
+      <ion-col no-lines text-center>
+        <div class="avatar">
+          <ion-icon name="man"></ion-icon>
           <p>
-            Lugar
-            <br> Mahahual
+            Sector
+            <br> Gobierno
+          </p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-row no-padding>
+    <ion-col class="datos" ion-item col-6 col-sm-6 text-center text-wrap no-lines>
+      <ion-icon name="md-pin"></ion-icon>
+      <p>
+        Lugar
+        <br> {{ lugar }}
+      </p>
+    </ion-col>
+    <ion-col class="datos" ion-item col-6 col-sm-6 text-center text-wrap no-lines>
+      <ion-icon name="md-calendar"></ion-icon>
+      <p>
+        Fecha
+        <br> 23/02/2019
+      </p>
+    </ion-col>
+  </ion-row>
+
+  <ion-grid no-padding margin-top style="border-bottom: 1px black solid;">
+
+    <ion-row no-padding>
+      <ion-col ion-item col-4 col-sm-4 text-center text-wrap no-lines>
+        <ion-icon name="ios-information-circle-outline"></ion-icon>
+        <p>
+          Kg estimados
+          <br> 1200
+        </p>
+      </ion-col>
+      <ion-col ion-item col-4 col-sm-4 text-center text-wrap no-lines>
+        <ion-icon name="md-checkmark-circle-outline"></ion-icon>
+        <p>
+          Kg recolectados
+          <br> {{ kg }} kg
+        </p>
+      </ion-col>
+      <ion-col ion-item col-4 col-sm-4 text-center text-wrap no-lines>
+        <ion-icon name="body"></ion-icon>
+        <p>
+          Personas
+          <br> 10
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid padding class="animated fadeInDown contenido" >
+      <ion-row padding>
+        <ion-col no-lines text-center>
+          <div class="avatar">
+            <ion-icon name="man"></ion-icon>
+            <p>
+            Sector
+              <br> Privado
+            </p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+    <ion-row no-padding>
+      <ion-col class="datos" ion-item col-6 col-sm-6 text-center text-wrap no-lines>
+        <ion-icon name="md-pin"></ion-icon>
+        <p>
+          Lugar
+          <br> {{ lugar }}
+        </p>
+      </ion-col>
+      <ion-col class="datos" ion-item col-6 col-sm-6 text-center text-wrap no-lines>
+        <ion-icon name="md-calendar"></ion-icon>
+        <p>
+          Fecha
+          <br> 23/02/2019
+        </p>
+      </ion-col>
+    </ion-row>
+  
+    <ion-grid no-padding margin-top style="border-bottom: 1px black solid;">
+  
+      <ion-row no-padding>
+        <ion-col ion-item col-4 col-sm-4 text-center text-wrap no-lines>
+          <ion-icon name="ios-information-circle-outline"></ion-icon>
+          <p>
+            Kg estimados
+            <br> 1200
           </p>
         </ion-col>
-        <ion-col class="datos" ion-item col-6 col-sm-6 text-center text-wrap no-lines>
-          <ion-icon name="ios-alarm-outline"></ion-icon>
+        <ion-col ion-item col-4 col-sm-4 text-center text-wrap no-lines>
+          <ion-icon name="md-checkmark-circle-outline"></ion-icon>
           <p>
-            Fecha
-            <br> 23/02/2019
+            Kg recolectados
+            <br> {{ kg }} kg
+          </p>
+        </ion-col>
+        <ion-col ion-item col-4 col-sm-4 text-center text-wrap no-lines>
+          <ion-icon name="body"></ion-icon>
+          <p>
+            Personas
+            <br> 10
           </p>
         </ion-col>
       </ion-row>
-    
-      <ion-grid no-padding margin-top class="Form">
-    
-        <ion-row no-padding>
-          <ion-col ion-item col-4 col-sm-4 text-center text-wrap no-lines>
-            <ion-icon name="md-boat"></ion-icon>
-            <p>
-              Kg estimados
-              <br> 1200
-            </p>
-          </ion-col>
-          <ion-col ion-item col-4 col-sm-4 text-center text-wrap no-lines>
-            <ion-icon name="md-boat"></ion-icon>
-            <p>
-              Kg recolectados
-              <br> 875
-            </p>
-          </ion-col>
-          <ion-col ion-item col-4 col-sm-4 text-center text-wrap no-lines>
-            <ion-icon name="md-boat"></ion-icon>
-            <p>
-              Personas
-              <br> 10
-            </p>
-          </ion-col>
-        </ion-row>
-        <ion-row no-padding>
-          <ion-col ion-item col-6 col-sm-6 text-center text-wrap no-lines>
-            <ion-icon name="md-person"></ion-icon>
-            <p>
-              Costo Adultos
-              <br> h
-            </p>
-          </ion-col>
-          <ion-col ion-item col-6 col-sm-6 text-center text-wrap no-lines>
-            <ion-icon name="md-football"></ion-icon>
-            <p>
-              Costo Niños
-              <br> h
-            </p>
-          </ion-col>
-        </ion-row>
-    
-    
-      </ion-grid>
+    </ion-grid>
 
 </ion-content>

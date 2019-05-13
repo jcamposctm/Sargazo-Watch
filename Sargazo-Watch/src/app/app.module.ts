@@ -6,18 +6,30 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { AgregarReportePage } from '../pages/agregar-reporte/agregar-reporte';
+import { DetallesRecoleccionPage } from '../pages/detalles-recoleccion/detalles-recoleccion';
+import { RecoleccionSemanalPage } from '../pages/recoleccion-semanal/recoleccion-semanal';
 import { RecoleccionAgregarPage } from '../pages/recoleccion-agregar/recoleccion-agregar';
 import { ListaLugaresPage } from '../pages/lista-lugares/lista-lugares';
 import { FCM } from '@ionic-native/fcm/';
 import { LoginPage } from '../pages/login/login';
+import { CausasPage } from '../pages/causas/causas';
+import { CosecuenciasPage } from '../pages/cosecuencias/cosecuencias';
+import { UsosPage } from '../pages/usos/usos';
+import { PrevencionPage } from '../pages/prevencion/prevencion';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    AgregarReportePage,
+    DetallesRecoleccionPage,
     RecoleccionAgregarPage,
-    ListaLugaresPage,
-    LoginPage
+    RecoleccionSemanalPage,
+    CausasPage,
+    CosecuenciasPage,
+    PrevencionPage,
+    UsosPage
   ],
   imports: [
     BrowserModule,
@@ -27,15 +39,19 @@ import { LoginPage } from '../pages/login/login';
   entryComponents: [
     MyApp,
     HomePage,
+    AgregarReportePage,
+    DetallesRecoleccionPage,
     RecoleccionAgregarPage,
-    ListaLugaresPage,
-    LoginPage
+    RecoleccionSemanalPage,
+    CausasPage,
+    CosecuenciasPage,
+    PrevencionPage,
+    UsosPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    FCM ,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
-export class AppModule { }
+export class AppModule {}
